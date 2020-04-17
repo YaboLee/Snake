@@ -2,8 +2,12 @@
 #define SQUARE_H
 
 class Square {
-    int X;
-    int Y;
+    private:
+        int X;
+        int Y;
+    public:
+        virtual int GetX() const;
+        virtual int GetY() const;
 };
 
 #endif 

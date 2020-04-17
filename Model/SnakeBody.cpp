@@ -10,10 +10,10 @@ void SnakeBody::Move(Direction direct) {
     switch (direct)
     {
     case Direction::Up:
-        this->Y--;
+        this->Y++;
         break;
     case Direction::Down:
-        this->Y++;
+        this->Y--;
         break;
     case Direction::Left:
         this->X--;
@@ -26,5 +26,5 @@ void SnakeBody::Move(Direction direct) {
     }
 }
 
-int SnakeBody::GetX() { return this->X; }
-int SnakeBody::GetY() { return this->Y; }
+int SnakeBody::GetX() const { return this->X; }
+int SnakeBody::GetY() const { return this->Y; }

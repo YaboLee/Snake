@@ -14,8 +14,8 @@ class SnakeBody : public Square {
         SnakeBody(int x, int y, Color color);
         void SetColor(Color color);
         void Move(Direction direct);
-        int GetX();
-        int GetY();
+        int GetX() const override;
+        int GetY() const override;
 };
 
 #endif //SNAKE_BODY_H
