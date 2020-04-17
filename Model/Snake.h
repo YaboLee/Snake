@@ -1,13 +1,14 @@
 #ifndef SNAKE_H
 #define SNAKE_H
 
-#include <queue>
+#include <deque>
 #include "SnakeBody.h"
+#include <algorithm>
 #include "Config.h"
 
 class Snake {
     private:
-        std::queue<SnakeBody*> bodies;
+        std::deque<SnakeBody*> bodies;
         Color color;
         Direction direction;
     
@@ -18,6 +19,7 @@ class Snake {
         void MoveComplete(bool eaten);
         void SetDirection(Direction direct);
         Direction GetDirection();
+        bool HasBody(const SnakeBody* sb);
         unsigned int GetLength();
         Color GetColor();
         // The head of the queue is the tail of the snake.

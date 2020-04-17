@@ -3,6 +3,13 @@
 #include "Square.h"
 
 class Food : public Square {
+    private:
+        int X;
+        int Y;
+    
+    public:
+        int GetX() const override;
+        int GetY() const override;
 
 };
 

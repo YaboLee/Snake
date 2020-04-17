@@ -58,3 +58,7 @@ TEST_CASE( "Snake movement", "[Snake]") {
     REQUIRE( s.GetTail().GetX() == 4 );
     REQUIRE( s.GetTail().GetY() == 5 );
 }
+
+TEST_CASE( "Controller IsHitFood", "[Controller]" ) {
+    
+}
