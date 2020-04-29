@@ -10,7 +10,6 @@ class Square {
     public:
         virtual int GetX() const;
         virtual int GetY() const;
-        virtual std::string GetClassName() const;
 };
 
 #endif 

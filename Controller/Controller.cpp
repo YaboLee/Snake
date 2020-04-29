@@ -30,4 +30,21 @@ bool Controller::IsHitWall(const SnakeBody* sb) {
             ) != this->walls.end();
 }
 
+void Controller::KeyboardListen() {
+    int key;
+    while ( (key = getchar()) ) {
+        std::cout<<key<<std::endl;
+    }
+    
+    switch (key)
+    {
+    case 56:
+        /* code */
+        break;
+    
+    default:
+        break;
+    }
+}
+
 std::vector<Snake*> Controller::GetSnakes() { return this->snakes; }

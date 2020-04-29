@@ -1,6 +1,7 @@
 #define CATCH_CONFIG_MAIN
 
 #include "../Model/Snake.h"
+#include "../Controller/Controller.h"
 #include "catch2/catch.hpp"
 
 TEST_CASE( "Snake is initialized", "[Snake]" ) {
@@ -60,5 +61,6 @@ TEST_CASE( "Snake movement", "[Snake]") {
 }
 
 TEST_CASE( "Controller IsHitFood", "[Controller]" ) {
-    
+    auto c = Controller();
+    c.CreateSnakes();
 }
